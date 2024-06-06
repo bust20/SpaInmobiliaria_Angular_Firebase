@@ -1,0 +1,27 @@
+<header class="pt-20">
+    <main class="mb-5 grid grid-cols-mobile md:grid-cols-pc auto-cols-fr gap-5 justify-items-center p-10">
+        <ng-container *ngFor="let inmueble of inmuebles, let idx = index">
+            <div
+                class=" flex flex-col md:flex-row   border-2 rounded-xl w-full h-full transition duration-500 hover:bg-gray-300 hover:transform hover:scale-110">
+
+                <img class="w-auto md:w-80 h-52 md:h-auto rounded-t-xl md:rounded-r-none md:rounded-l-xl"
+                    [src]="inmueble.main_image" alt="foto principal del inmueble" [routerLink]="['/details', idx]">
+
+                <div class="w-full h-full flex flex-col justify-between">
+
+                    <section class="flex flex-col gap-3 w-full p-4 h-full" [routerLink]="['/details', idx]">
+                        <p class="text-2xl">{{inmueble.price}} €</p>
+                        <p>{{inmueble.title}}</p>
+                    </section>
+
+
+                    <ng-container *ngIf="sessionActive && user?.level == 'administrador'">
+                        <button (click)="delete(idx)" class="py-1 px-3 bg-gray-200 hover:bg-red-300">Delete</button>
+                    </ng-container>
+
+                </div>
+            </div>
+        </ng-container>
+    </main>
+
+</header>

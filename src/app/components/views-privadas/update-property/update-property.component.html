@@ -1,0 +1,59 @@
+<main class="pt-20">
+    <article class="grid grid-cols-3 auto-cols-fr gap-x-10 gap-y-14  py-10 mx-60">
+        <div class="flex flex-col w-full h-full ">
+            <label for="">Titulo</label>
+            <input type="text" class="bg-gray-300" [(ngModel)]="obj.title" />
+        </div>
+
+        <div class="flex flex-col w-full h-full">
+            <label for="type">Tipo</label>
+            <select name="type" id="" class="bg-gray-300" [(ngModel)]="obj.type">
+                <option value="piso">Piso</option>
+                <option value="casa">Casa</option>
+            </select>
+        </div>
+
+
+        <div class="flex flex-col w-full h-full">
+            <label for="">Sitio</label>
+            <input type="text" class="bg-gray-300" [(ngModel)]="obj.site">
+        </div>
+
+        <div class="flex flex-col w-full h-full">
+            <label for="">Precio</label>
+            <input type="number" class="bg-gray-300" [(ngModel)]="obj.price">
+        </div>
+
+        <div class="flex flex-col w-full h-full">
+            <label for="parking">Parking</label>
+            <select name="parking" id="" class="bg-gray-300" [(ngModel)]="obj.parking">
+                <option value="true">Si</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+
+        <div class="flex flex-col w-full h-full">
+            <label for="">Biografia</label>
+            <input type="text" class="bg-gray-300" [(ngModel)]="obj.biography">
+        </div>
+
+        <div class="flex flex-col w-full h-full">
+            <label for="">Imagen</label>
+            <input type="text" class="bg-gray-300" [(ngModel)]="obj.main_image">
+        </div>
+
+        <div class="flex flex-col w-full h-full">
+            <label for="">Carusel Imagenes</label>
+            <input type="text" class="bg-gray-300" [(ngModel)]="obj.carousel_imgs">
+        </div>
+
+        <div class="flex flex-col w-full h-full">
+            <label for="">Observaciones</label>
+            <input type="text" class="bg-gray-300" [(ngModel)]="obj.observations">
+        </div>
+
+
+        <input [routerLink]="['/catalog']" class="border-2 border-black w-full h-full hover:bg-gray-300" (click)="update()" type="submit">
+
+    </article>
+</main>

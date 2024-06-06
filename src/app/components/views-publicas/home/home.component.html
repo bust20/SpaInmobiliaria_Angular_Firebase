@@ -1,0 +1,144 @@
+<section class="flex-col pt-20 w-full">
+  <article class="w-full h-[600px] grid grid-cols-4 grid-rows-4">
+    <img [src]="backgorund" alt="" class=" w-full h-full  col-span-full row-span-full">
+
+    <div class=" col-start-1 col-span-2 row-start-3 ml-20  flex flex-col justify-around p-2 bg-gray-700 bg-opacity-40 text-white ">
+      <h1 class="text-lg sm:text-2xl md:text-4xl lg:text-5xl">Tenemos el piso que necesitas</h1>
+      <p class="text-xs sm:text-base md:text-xl lg:text-2xl">Mira nuestros inmuebles</p>
+    </div>
+  </article>
+
+  <article class="flex justify-around flex-wrap pt-8 pb-10 bg-gray-200 w-auto">
+    <div (mouseover)="change1=true" (mouseleave)="change1=false" class="text-center w-56">
+      <div *ngIf="change1 == false else reverse1" class="w-auto">
+        <!--Icono-->
+        <svg class="scale-50 " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        <!--Titutlo-->
+        <h2 class="hover:text-gray-700 font-bold">Especialistas</h2>
+        <!--Descripción-->
+        <p class="pt-2">Somos una agencia china que trabajamos exclusivamente con clientes chinos, nadie conoce el
+          mercado
+          mejor que nosotros.</p>
+      </div>
+
+      <ng-template #reverse1>
+        <div class=" transition duration-500 hover:bg-gray-300 hover:transform scale-110">
+          <!--Icono-->
+          <svg class="scale-50 " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <!--Titutlo-->
+          <h2 class="font-bold">Grandes calificados</h2>
+          <!--Descripción-->
+          <p class="pt-2">Todos nuestros empleados estan certificados en la gran academia de agentes inmoviliarios de
+            misisipi</p>
+        </div>
+      </ng-template>
+    </div>
+
+    <div (mouseover)="change2=true" (mouseleave)="change2=false" class="text-center w-56">
+      <div *ngIf="change2 == false else reverse2">
+        <!--Icono-->
+        <svg class="scale-50 " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        <!--Titutlo-->
+        <h2 class="hover:text-gray-700 font-bold">Especialistas</h2>
+        <!--Descripción-->
+        <p class="pt-2">Somos una agencia china que trabajamos exclusivamente con clientes chinos, nadie conoce el
+          mercado
+          mejor que nosotros.</p>
+      </div>
+
+      <ng-template #reverse2>
+        <div class=" transition duration-500 hover:bg-gray-300 hover:transform scale-110">
+          <!--Icono-->
+          <svg class="scale-50 " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <!--Titutlo-->
+          <h2 class="font-bold">Grandes calificados</h2>
+          <!--Descripción-->
+          <p class="pt-2">Todos nuestros empleados estan certificados en la gran academia de agentes inmoviliarios de
+            misisipi</p>
+        </div>
+      </ng-template>
+    </div>
+
+    <div (mouseover)="change3=true" (mouseleave)="change3=false" class="text-center w-56">
+      <div *ngIf="change3 == false else reverse3">
+        <!--Icono-->
+        <svg class="scale-50 " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        <!--Titutlo-->
+        <h2 class="hover:text-gray-700 font-bold">Especialistas</h2>
+        <!--Descripción-->
+        <p class="pt-2">Somos una agencia china que trabajamos exclusivamente con clientes chinos, nadie conoce el
+          mercado
+          mejor que nosotros.</p>
+      </div>
+
+      <ng-template #reverse3>
+        <div class=" transition duration-500 hover:bg-gray-300 hover:transform scale-110">
+          <!--Icono-->
+          <svg class="scale-50 " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <!--Titutlo-->
+          <h2 class="font-bold">Grandes calificados</h2>
+          <!--Descripción-->
+          <p class="pt-2">Todos nuestros empleados estan certificados en la gran academia de agentes inmoviliarios de
+            misisipi</p>
+        </div>
+      </ng-template>
+    </div>
+
+    <div (mouseover)="change4=true" (mouseleave)="change4=false" class="text-center w-56">
+      <div *ngIf="change4 == false else reverse4">
+        <!--Icono-->
+        <svg class="scale-50 " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        <!--Titutlo-->
+        <h2 class="hover:text-gray-700 font-bold">Especialistas</h2>
+        <!--Descripción-->
+        <p class="pt-2">Somos una agencia china que trabajamos exclusivamente con clientes chinos, nadie conoce el
+          mercado
+          mejor que nosotros.</p>
+      </div>
+
+      <ng-template #reverse4>
+        <div class=" transition duration-500 hover:bg-gray-300 hover:transform scale-110">
+          <!--Icono-->
+          <svg class="scale-50 " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <!--Titutlo-->
+          <h2 class="font-bold">Grandes calificados</h2>
+          <!--Descripción-->
+          <p class="pt-2">Todos nuestros empleados estan certificados en la gran academia de agentes inmoviliarios de
+            misisipi</p>
+        </div>
+      </ng-template>
+    </div>
+  </article>
+</section>

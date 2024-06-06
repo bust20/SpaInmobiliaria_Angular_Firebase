@@ -1,0 +1,44 @@
+<header class="pt-[124px] flex flex-wrap justify-around bg-gray-200 w-full">
+
+    <section class="  my-4 text-center lg:w-1/2">
+        <h1 class="text-4xl my-3">¡Trabajemos juntos!</h1>
+        
+        <p class="my-8  lg:w-[480px] ml-auto mr-auto">Si deseas consultar mayor información sobre nuestros servicios o tienes alguna duda al respecto, no dudes en
+            solicitar una consultoria gratuita y
+            uno de nuestros asesores te contactará con la mayor brevedad posible
+        </p>
+
+        <p class="pb-1">Contactanos via WhatsApp {{empresa.telephone}}</p>
+
+        <p class="pb-1">{{empresa.email}}</p>
+
+        <p class="pb-1">{{empresa.address}}</p>
+
+        <img [src]="empresa.imgAddress" alt="" class="m-auto">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.176436768143!2d0.9018229757759559!3d41.63031758089201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a6951c8231804d%3A0xbb0c73386f96445c!2sResquitx!5e0!3m2!1ses!2ses!4v1702399752815!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+    </section>
+
+    <form action="" class="flex flex-col bg-gray-300 w-96 border-black border-2 p-5 my-5">
+        <label for="">Nombre</label>
+        <input type="text">
+
+        <label for="">Telefono</label>
+        <input type="text">
+
+        <label for="">Email</label>
+        <input type="text">
+
+        <label for="">Asunto</label>
+        <input type="text">
+
+        <label for="">Mansaje</label>
+        <input type="text">
+
+        <input type="submit">
+    </form>
+
+</header>

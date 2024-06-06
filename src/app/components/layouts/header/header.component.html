@@ -1,0 +1,111 @@
+<header class="w-auto h-20 flex items-center pl-5  pr-14 border-b-4 border-b-zinc-950 bg-white ">
+
+    <a [routerLink]="['/home']"> <img [src]="logo" alt="Logo de SpaInmobiliaria" class="w-14 h-14"></a>
+
+    <!--Pantallas medianas / grandes-->
+    <div class="ml-auto">
+        <nav class="hidden w-auto h-full md:flex gap-12 justify-between">
+            <a [routerLink]="['/home']" class="hover:text-gray-500"
+                [routerLinkActive]="['underline', 'decoration-gray-300', 'decoration-4']">Home</a>
+
+            <a [routerLink]="['/catalog']" class="hover:text-gray-500"
+                [routerLinkActive]="['underline', 'decoration-gray-300', 'decoration-4']">Nuestros pisos</a>
+
+            <a [routerLink]="['/about']" class="hover:text-gray-500"
+                [routerLinkActive]="['underline', 'decoration-gray-300', 'decoration-4']">¿Quienes somos?</a>
+
+            <a [routerLink]="['/contact']" class="hover:text-gray-500"
+                [routerLinkActive]="['underline', 'decoration-gray-300', 'decoration-4']">Contacto</a>
+
+
+            <ng-container *ngIf="!sessionActive">
+                <a [routerLink]="['login']" class="hover:text-gray-500"
+                    [routerLinkActive]="['underline', 'decoration-gray-300', 'decoration-4']">login</a>
+
+            </ng-container>
+
+
+            <ng-container *ngIf="sessionActive">
+                <button (click)="showMenu()" class=" relative hover:text-gray-500 font-medium inline-flex items-center"
+                    type="button">
+                    {{user?.name}}
+                    <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 4 4 4-4" />
+                    </svg>
+                </button>
+
+                <!-- Dropdown menu -->
+                <div *ngIf="menu" class=" absolute right-12 mt-8 z-10 rounded-md bg-gray-300 text-center  shadow w-44">
+                    <ul class="flex flex-col gap-3 py-2">
+                        <ng-container *ngIf="user?.level == 'administrador'">
+                            <li>
+                                <!--Enlaçe para añadir pisos/ solo visible a admins-->
+                                <a [routerLink]="['/addProperty']" class="hover:text-gray-500"
+                                    [routerLinkActive]="['underline', 'decoration-gray-300', 'decoration-4']">Añadir
+                                    pisos</a>
+                            </li>
+                        </ng-container>
+
+                        <li>
+                            {{user?.level}}
+                        </li>
+
+                        <li>
+                            <!--Boton de logout-->
+                            <app-logout></app-logout>
+                        </li>
+                    </ul>
+                </div>
+            </ng-container>
+
+            <!-- <p *ngIf="user != null">
+                {{user.name}}
+            </p> -->
+        </nav>
+    </div>
+
+
+
+    <!--Dispositivos movil-->
+
+    <div class="md:hidden flex items-center" (click)="show()">
+        <button class="outline-none mobile-menu-button">
+            <svg class="w-6 h-6 text-gray-500" x-show="!showMenu" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+
+    <nav *ngIf="modal"
+        class="h-full overflow-x-auto overflow-y-auto fixed inset-0 z-10  justify-center items-center text-center flex flex-col text-3xl  bg-white">
+
+        <button class="absolute right-5 top-5 text-4xl" (click)="hide()">X</button>
+
+        <ul class=" flex flex-col gap-5">
+            <li> <a [routerLink]="['/home']" class="mx-7"
+                    [routerLinkActive]="['underline', 'decoration-gray-300', 'decoration-4']" (click)="hide()">Home</a>
+            </li>
+
+            <li> <a [routerLink]="['/catalog']" class="mx-7"
+                    [routerLinkActive]="['underline', 'decoration-gray-300', 'decoration-4']" (click)="hide()">Nuestros
+                    pisos</a></li>
+
+            <li><a [routerLink]="['/houseCatalog']" class="mx-7"
+                    [routerLinkActive]="['underline', 'decoration-gray-300', 'decoration-4']" (click)="hide()">Nuestras
+                    casas</a></li>
+
+            <li> <a [routerLink]="['/about']" class="mx-7"
+                    [routerLinkActive]="['underline', 'decoration-gray-300', 'decoration-4']" (click)="hide()">¿Quienes
+                    somos?</a></li>
+
+            <li> <a [routerLink]="['/contact']" class="mx-7"
+                    [routerLinkActive]="['underline', 'decoration-gray-300', 'decoration-4']"
+                    (click)="hide()">Contacto</a></li>
+        </ul>
+
+    </nav>
+
+</header>

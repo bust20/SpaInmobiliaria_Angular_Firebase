@@ -1,0 +1,60 @@
+<main class="pt-20 text-center h-screen">
+
+    <article class="flex justify-center items-center gap-10 mb-5 py-5">
+        <div>
+            <label for="">Dia</label>
+            <select name="day" [(ngModel)]="dia">
+                <option [value]="fecha.getDate()">{{fecha.getDate()}}</option>
+                <option [value]="fecha.getDate()+1">{{fecha.getDate()+1}}</option>
+                <option [value]="fecha.getDate()+2">{{fecha.getDate()+2}}</option>
+            </select>
+        </div>
+
+        <div>
+
+
+            <label for="">Hora</label>
+            <select name="" [(ngModel)]="hora">
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+            </select>
+            <!--
+            <input type="time" [(ngModel)]="hora" min="9:00" max="21:00">
+        -->
+        </div>
+
+
+        <button (click)="reservar()">Reservar</button>
+    </article>
+
+    <article class="mb-5 py-5">
+        <p>{{msg}}</p>
+    </article>
+
+
+    <article class="grid grid-cols-5 justify-items-center gap-y-5">
+        <ng-container *ngFor="let reserva of reservas, let idx = index">
+            <ng-container *ngIf="reserva.inmueble == inmueble.id">
+                <ng-container *ngIf="reserva.dia == dia">
+                    <div class="flex flex-col text-center rounded-md border-2 border-gray-300 p-10">
+
+                        <p>Dia: {{reserva.dia}}</p>
+
+
+                        <p>A las: {{reserva.hora}} horas</p>
+                        <p>Esta reservado por {{reserva.voluntario}}</p>
+                    </div>
+                </ng-container>
+            </ng-container>
+        </ng-container>
+    </article>
+</main>

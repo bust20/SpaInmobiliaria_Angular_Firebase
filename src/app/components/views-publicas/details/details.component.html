@@ -1,0 +1,67 @@
+<header class="pt-20 flex flex-wrap">
+
+    <article class="w-full flex justify-end">
+        <ng-container *ngIf="user?.level == 'administrador'">
+            <article class="py-2">
+                <button [routerLink]="['/updateProperty', id]"
+                    class="bg-gray-400 py-4 px-5 float-right mr-10">Editar</button>
+            </article>
+        </ng-container>
+
+
+        <ng-container *ngIf="sessionActive">
+            <article class="py-2">
+                <button [routerLink]="['/calendar', id]"
+                    class="bg-gray-400 py-4 px-5 float-right mr-10">Calanedari</button>
+            </article>
+        </ng-container>
+    </article>
+
+    <!--Imagen del anuncio-->
+    <article class="relative w-1/2  p-2">
+        <img class="w-full h-auto" [src]="obj.carousel_imgs[idx]" alt="">
+
+        <button class="absolute top-1/2 bg-gray-200 rounded-full p-1" (click)="before()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+            </svg>
+
+        </button>
+
+        <button class="absolute right-2 top-1/2  bg-gray-200 rounded-full p-1" (click)="next()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>
+        </button>
+
+    </article>
+
+    <!--Texto del anuncio-->
+    <article class="w-1/2 p-5 bg-gray-200">
+
+        <div class="flex flex-col justify-around mt-5 mb-20">
+            <p class="text-4xl mb-10">{{obj.title}}</p>
+            <p class="text-3xl">{{obj.price}}€</p>
+        </div>
+
+        <div class=" flex justify-around">
+            <div class="">
+                <p class="mb-2" *ngFor="let info of obj.biography">*{{info}}</p>
+
+                <p *ngFor="let info of obj.observations">{{info}}</p>
+            </div>
+
+            <div class="">
+                <h2 class="text-2xl font-bold mb-2">Caracterisitcas</h2>
+                <p class="mb-2"><span class="font-bold">Ubicacion:</span> {{obj.site}} </p>
+                <p *ngIf="obj.parking == true; else noParking"><span class="font-bold">Parking:</span> Si</p>
+
+                <ng-template #noParking>
+                    <span class="font-bold">Parking:</span> No
+                </ng-template>
+            </div>
+        </div>
+    </article>
+</header>

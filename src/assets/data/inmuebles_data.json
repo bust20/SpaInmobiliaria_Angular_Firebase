@@ -1,0 +1,316 @@
+[
+    {
+        "title": "Apartamento luminoso en el centro de Madrid",
+        "type": "piso",
+        "site": "Madrid",
+        "main_image": "https://static.inmofactory.com/images/inmofactory/documents/1/83875/35221112/635602315.jpg?rule=web_360x270",
+        "carousel_imgs": [
+            "https://static.inmofactory.com/images/inmofactory/documents/1/83875/35221112/635602316.jpg?rule=web_360x270",
+            "https://static.inmofactory.com/images/inmofactory/documents/1/83875/35221112/635602308.jpg?rule=web_360x270"
+        ],
+        "biography": [
+            "Salón amplio con cocina abierta",
+            "Dormitorios cómodos",
+            "Balcon con vistas a la ciudad"
+        ],
+        "price": 300000,
+        "parking": true,
+        "observations": [
+            "Ubicado en un edificio seguro y bien mantenido",
+            "Cerca del transporte público y de las comodidades locales",
+            "Ideal para una persona sola o una pareja"
+        ]
+    },
+    {
+        "title": "Casa con encanto en la costa de Cádiz",
+        "type": "casa",
+        "site": "Cádiz",
+        "main_image": "https://static.inmofactory.com/images/inmofactory/documents/1/87498/34679538/610693268.jpg?rule=web_360x270",
+        "carousel_imgs": [
+            "https://static.inmofactory.com/images/inmofactory/documents/1/87498/34679538/610692979.jpg?rule=web_360x270",
+            "https://static.inmofactory.com/images/inmofactory/documents/1/87498/34679538/610692371.jpg?rule=web_360x270"
+        ],
+        "biography": [
+            "Jardín grande con piscina",
+            "Chimenea de leña en el salón",
+            "Tres dormitorios y dos baños"
+        ],
+        "price": 500000,
+        "parking": true,
+        "observations": [
+            "Ubicado en un barrio tranquilo",
+            "Cerca de las playas"
+        ]
+    },
+    {
+        "title": "Piso en el barrio gótico de Barcelona",
+        "type": "piso",
+        "site": "Barcelona",
+        "main_image": "https://static.fotocasa.es/images/ads/653f382d-8742-4ade-b6d1-9fb7a886c9ec?rule=web_360x270",
+        "carousel_imgs": [
+            "https://static.fotocasa.es/images/ads/d3bb9f8c-7e9c-47e8-913e-3511f7dfd218?rule=web_360x270",
+            "https://static.fotocasa.es/images/ads/8b818518-d5a2-44cb-a522-6f623e7f2fbd?rule=web_360x270"
+        ],
+        "biography": [
+            "Salón-comedor con cocina abierta",
+            "Dormitorios cómodos",
+            "Patio interior"
+        ],
+        "price": 450000,
+        "parking": false,
+        "observations": [
+            "Ubicado en una zona céntrica",
+            "Cerca de los principales atractivos turísticos"
+        ]
+    },
+    {
+        "title": "Chalet en la sierra de Madrid",
+        "type": "casa",
+        "site": "Madrid",
+        "main_image": "https://static.inmofactory.com/images/inmofactory/documents/1/97847/35255045/632151567.jpg?rule=web_360x270",
+        "carousel_imgs": [
+            "https://static.inmofactory.com/images/inmofactory/documents/1/97847/35255045/632151571.jpg?rule=web_360x270",
+            "https://static.inmofactory.com/images/inmofactory/documents/1/97847/35255045/632151568.jpg?rule=web_360x270"
+        ],
+        "biography": [
+            "Jardín grande con piscina",
+            "Chimenea de leña en el salón",
+            "Cuatro dormitorios y tres baños"
+        ],
+        "price": 750000,
+        "parking": true,
+        "observations": [
+            "Ubicado en un entorno natural",
+            "Cerca de las pistas de esquí"
+        ]
+    },
+    {
+        "title": "Piso en el centro de Sevilla",
+        "type": "piso",
+        "site": "Sevilla",
+        "main_image": "https://static.inmofactory.com/images/inmofactory/documents/1/85261/35363492/637563173.jpg?rule=web_360x270",
+        "carousel_imgs": [
+            "https://static.inmofactory.com/images/inmofactory/documents/1/85261/35363492/637563174.jpg?rule=web_360x270",
+            "https://static.inmofactory.com/images/inmofactory/documents/1/85261/35363492/637563177.jpg?rule=web_360x270"
+        ],
+        "biography": [
+            "Salón-comedor con techos altos",
+            "Cocina antigua reformada",
+            "Patio interior"
+        ],
+        "price": 400000,
+        "parking": false,
+        "observations": [
+            "Ubicado en una zona céntrica",
+            "Cerca de la catedral"
+        ]
+    },
+    {
+        "title": "Apartamento en la playa de Málaga",
+        "type": "piso",
+        "site": "Málaga",
+        "main_image": "https://static.inmofactory.com/images/inmofactory/documents/1/115935/35232691/632980178.jpg?rule=web_360x270",
+        "carousel_imgs": [
+            "https://static.inmofactory.com/images/inmofactory/documents/1/115935/35232691/632980179.jpg?rule=web_360x270",
+            "https://static.inmofactory.com/images/inmofactory/documents/1/115935/35232691/632980181.jpg?rule=web_360x270"
+        ],
+        "biography": [
+            "Balcon con vistas al mar",
+            "Aire acondicionado",
+            "Terraza comunitaria"
+        ],
+        "price": 500000,
+        "parking": false,
+        "observations": [
+            "A pocos minutos de la playa"
+        ]
+    },
+    {
+        "title": "Piso en el centro de Bilbao",
+        "type": "piso",
+        "site": "Bilbao",
+        "main_image": "https://static.inmofactory.com/images/inmofactory/documents/1/108152/34907077/618685318.jpg?rule=web_360x270",
+        "carousel_imgs": [
+            "https://static.inmofactory.com/images/inmofactory/documents/1/108152/34907077/618685319.jpg?rule=web_360x270",
+            "https://static.inmofactory.com/images/inmofactory/documents/1/108152/34907077/618685322.jpg?rule=web_360x270"
+        ],
+        "biography": [
+            "Salón-comedor con cocina abierta",
+            "Dormitorios cómodos",
+            "Terraza con vistas a la ciudad"
+        ],
+        "price": 450000,
+        "parking": false,
+        "observations": [
+            "Ubicado en una zona céntrica",
+            "Cerca de los principales atractivos turísticos"
+        ]
+    },
+    {
+        "title": "Chalet en la costa de Galicia",
+        "type": "casa",
+        "site": "Galicia",
+        "main_image": "https://static.fotocasa.es/images/ads/456de03e-f782-4016-80a5-e061fb5ed3f9?rule=web_412x257",
+        "carousel_imgs": [
+            "https://static.fotocasa.es/images/ads/53753654-ce95-4541-b5cb-31254505425d?rule=web_360x270",
+            "https://static.fotocasa.es/images/ads/077da702-79f8-4ba8-a8fb-ea7d6da78490?rule=web_360x270"
+        ],
+        "biography": [
+            "Jardín grande con piscina",
+            "Chimenea de leña en el salón",
+            "Tres dormitorios y dos baños"
+        ],
+        "price": 600000,
+        "parking": true,
+        "observations": [
+            "Ubicado en un barrio tranquilo",
+            "Cerca de las playas"
+        ]
+    },
+    {
+        "title": "Apartamento en el barrio gótico de Valencia",
+        "type": "piso",
+        "site": "Valencia",
+        "main_image": "https://static.inmofactory.com/images/inmofactory/documents/1/86974/34973238/634092495.jpg?rule=web_360x270",
+        "carousel_imgs": [
+            "https://static.inmofactory.com/images/inmofactory/documents/1/86974/34973238/634092496.jpg?rule=web_360x270",
+            "https://static.inmofactory.com/images/inmofactory/documents/1/86974/34973238/634092499.jpg?rule=web_360x270"
+        ],
+        "biography": [
+            "Salón-comedor con cocina abierta",
+            "Dormitorios cómodos",
+            "Patio interior"
+        ],
+        "price": 400000,
+        "parking": false,
+        "observations": [
+            "Ubicado en una zona céntrica",
+            "Cerca de los principales atractivos turísticos"
+        ]
+    },
+    {
+        "title": "Piso en el centro de Zaragoza",
+        "type": "piso",
+        "site": "Zaragoza",
+        "main_image": "https://static.inmofactory.com/images/inmofactory/documents/1/100397/35222424/630890159.jpg?rule=web_360x0",
+        "carousel_imgs": [
+            "https://static.inmofactory.com/images/inmofactory/documents/1/100397/35222424/630890159.jpg?rule=web_360x0",
+            "https://static.inmofactory.com/images/inmofactory/documents/1/100397/35222424/630890168.jpg?rule=web_360x0"
+        ],
+        "biography": [
+            "Salón-comedor con cocina abierta",
+            "Dormitorios cómodos",
+            "Terraza con vistas a la ciudad"
+        ],
+        "price": 500000,
+        "parking": true,
+        "observations": [
+            "Ubicado en una zona céntrica",
+            "Cerca de los principales atractivos turísticos"
+        ]
+    },
+    {
+        "title": "Chalet en la montaña de Asturias",
+        "type": "casa",
+        "site": "Asturias",
+        "main_image": "https://static.inmofactory.com/images/inmofactory/documents/1/85332/29841775/570042520.jpg?rule=web_360x0",
+        "carousel_imgs": [
+            "https://static.inmofactory.com/images/inmofactory/documents/1/85332/29841775/570042536.jpg?rule=web_360x0",
+            "https://static.inmofactory.com/images/inmofactory/documents/1/85332/29841775/570042540.jpg?rule=web_360x0"
+        ],
+        "biography": [
+            "Jardín grande con piscina",
+            "Chimenea de leña en el salón",
+            "Cuatro dormitorios y tres baños"
+        ],
+        "price": 800000,
+        "parking": true,
+        "observations": [
+            "Ubicado en un entorno natural",
+            "Cerca de las pistas de esquí"
+        ]
+    },
+    {
+        "title": "Apartamento en la playa de Alicante",
+        "type": "piso",
+        "site": "Alicante",
+        "main_image": "https://static.inmofactory.com/images/inmofactory/documents/1/93893/35008569/622410286.jpg?rule=web_360x270",
+        "carousel_imgs": [
+            "https://static.inmofactory.com/images/inmofactory/documents/1/93893/35008569/622410290.jpg?rule=web_360x270",
+            "https://static.inmofactory.com/images/inmofactory/documents/1/93893/35008569/622410289.jpg?rule=web_360x270"
+        ],
+        "biography": [
+            "Balcon con vistas al mar",
+            "Aire acondicionado",
+            "Terraza comunitaria"
+        ],
+        "price": 600000,
+        "parking": false,
+        "observations": [
+            "A pocos minutos de la playa"
+        ]
+    },
+    {
+        "title": "Casa de pueblo en el centro de Cáceres",
+        "type": "casa",
+        "site": "Cáceres",
+        "main_image": "https://static.inmofactory.com/images/inmofactory/documents/1/90162/28139784/397155516.jpg?rule=web_360x270",
+        "carousel_imgs": [
+            "https://static.inmofactory.com/images/inmofactory/documents/1/90162/28139784/397155516.jpg?rule=web_360x270",
+            "https://static.inmofactory.com/images/inmofactory/documents/1/90162/28139784/397155531.jpg?rule=web_360x270"
+        ],
+        "biography": [
+            "Salón-comedor con chimenea",
+            "Cocina tradicional",
+            "Dos dormitorios y un baño"
+        ],
+        "price": 450000,
+        "parking": false,
+        "observations": [
+            "Ubicada en una zona céntrica",
+            "Cerca de los principales atractivos turísticos"
+        ]
+    },
+    {
+        "title": "Casa de campo en la costa de Málaga",
+        "type": "casa",
+        "site": "Málaga",
+        "main_image": "https://static.inmofactory.com/images/inmofactory/documents/1/101858/35305365/634262453.jpg?rule=web_360x270",
+        "carousel_imgs": [
+            "https://static.inmofactory.com/images/inmofactory/documents/1/101858/35305365/634262424.jpg?rule=web_360x270",
+            "https://static.inmofactory.com/images/inmofactory/documents/1/101858/35305365/634262426.jpg?rule=web_360x270"
+        ],
+        "biography": [
+            "Jardín grande con piscina",
+            "Chimenea de leña en el salón",
+            "Tres dormitorios y dos baños"
+        ],
+        "price": 800000,
+        "parking": true,
+        "observations": [
+            "Ubicada en un entorno natural",
+            "Cerca de las playas"
+        ]
+    },
+    {
+        "title": "Casa adosada en la montaña de Granada",
+        "type": "casa",
+        "site": "Granada",
+        "main_image": "https://static.inmofactory.com/images/inmofactory/documents/1/127788/34088841/585419577.jpg?rule=web_360x270",
+        "carousel_imgs": [
+            "https://static.inmofactory.com/images/inmofactory/documents/1/127788/34088841/585419515.jpg?rule=web_360x270",
+            "https://static.inmofactory.com/images/inmofactory/documents/1/127788/34088841/585419542.jpg?rule=web_360x270"
+        ],
+        "biography": [
+            "Jardín privado con barbacoa",
+            "Garaje para dos coches",
+            "Cuatro dormitorios y tres baños"
+        ],
+        "price": 1000000,
+        "parking": true,
+        "observations": [
+            "Ubicada en un entorno natural",
+            "Cerca de las pistas de esquí"
+        ]
+    }
+]

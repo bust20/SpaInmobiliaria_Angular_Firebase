@@ -1,0 +1,66 @@
+<main class="pt-20 flex flex-col md:flex-row justify-evenly">
+
+    <aside class="flex flex-col gap-10 py-5 px-10">
+        <div>
+            <h2>Titulo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div>
+            <h2>Titulo</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        </div>
+
+        <div>
+            <h2>Titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </aside>
+
+
+    <section class="flex flex-col gap-5  py-5 px-10">
+
+        <h1 class="text-4xl">Crear cuenta</h1>
+
+        <app-login-google></app-login-google>
+
+        <p class="text-center border-b-2 border-gray-300">O bien</p>
+
+        <ng-container *ngIf="msgLogged">
+            <p>{{msgLogged}}</p>
+        </ng-container>
+
+        
+
+        <article class="flex flex-col gap-5">
+            <div class="flex flex-col">
+                <label for="">Usuario</label>
+                <input type="text" [(ngModel)]="name" class="border-2 border-gray-300 rounded-md pl-2">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="">Email</label>
+                <input type="email" [(ngModel)]="email" class="border-2 border-gray-300 rounded-md pl-2">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="">Constraseña</label>
+                <input type="password" [(ngModel)]="password" class="border-2 border-gray-300 rounded-md pl-2">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="">Repetir contraseña</label>
+                <input type="password" [(ngModel)]="confirmPassword" class="border-2 border-gray-300 rounded-md pl-2">
+            </div>
+
+            <button (click)="add()" class="bg-gray-300 rounded-md text-2xl py-2 px-14">Crear cuenta</button>
+        </article>
+
+        <article class=" text-center flex flex-col gap-3">
+            <h2 class="border-b-2 border-gray-300 "> Ya tengo una cuenta </h2>
+
+            <button [routerLink]="['/login']" class=" border-2 border-gray-300 rounded-md text-2xl py-2 px-14">
+                Iniciar sesión</button>
+        </article>
+    </section>
+</main>
